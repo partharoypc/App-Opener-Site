@@ -3,33 +3,221 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+        body {
+            background-color: #0A2344;
+            font-family: 'rubik', sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        .accordion {
+            margin: 0 auto;
+            color: black;
+            background-color: white;
+            padding: 10px 10px;
+            text-align: start;
+        }
+        
+        .accordion .container {
+            position: relative;
+            margin: 10px 10px;
+        }
+        
+        .accordion .label {
+            position: relative;
+            padding: 10px 0;
+            font-size: 16px;
+            color: black;
+            cursor: pointer;
+        }
+        
+        .accordion .label::before {
+            content: '⌄';
+            position: absolute;
+            top: 20%;
+            right: -5px;
+            font-size: 16px;
+            font-weight: 400;
+            transform: translateY(-50%);
+        }
+        
+        .accordion .content {
+            position: relative;
+            background: white;
+            height: 0;
+            font-size: 16px;
+            text-align: justify;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        
+        .accordion hr {
+            width: 100;
+            margin-left: 0;
+            border: 1px solid rgb(245, 235, 235);
+        }
+        
+        .accordion .container.active .content {
+            height: auto;
+        }
+        
+        .accordion .container.active .label::before {
+            content: '-';
+            font-size: 18x;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="http://">App Opener</a>
-        </div>
-        <div class="inner-div">
-            <div>
-                <a href="http://">
-                    FAQs
-                </a>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="./">Views <span style="color: black;">Grow</span></a>
             </div>
-            <div class="login-btn">
-                <a style=" color: white;" href="http://">
-                    login
-                </a>
+            <div class="inner-div">
+                <div>
+                    <a href="./Terms-of-Service.html">
+                        FAQs
+                    </a>
+                </div>
+                <div class="login-btn">
+                    <a style=" color: white;" href="./">
+                        login
+                    </a>
+                </div>
+
             </div>
 
         </div>
 
+        <style>
+            .main-heading {
+                padding: 20px 0px;
+                margin: 10px auto;
+                color: white;
+                background: #12a4d9;
+            }
+            
+            .main-heading h1 {
+                padding: 0 auto;
+                margin: 0 auto;
+            }
+        </style>
+        <div class="main-body-b">
+            <section class="main-heading">
+                <h1>Frequently Asked Questions</h1>
+            </section>
+
+            <div class="accordion-body">
+                <div class="accordion">
+                    <div class="container">
+                        <div class="label">What is Views Grow?</div>
+                        <div class="content">Views Grow is a smart link generation service platform. We're just like bitly but with a smart twist.<br><br> Views Grow helps you by providing you your own smart link which lets you open a link directly in the app instead of opening
+                            links in the built-in browser.<br><br> For eg. If you are a YouTuber, whenver you share link of your YouTube channel in the Instagram's link-in-bio, it opens the link in the browser inside the Instagram app. But if you generate
+                            an Views Grow smark link of your YouTube channel and put that in your link-in-bio, it will redirect user to directly to the YouTube app which in turns gives you more engagement and great user experience.</div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="label">How is it different from bitly?</div>
+                        <div class="content">Bitly is a URL shortner. You can just decrease the length of your links from Bitly. Whereas Views Grow not only shorten your URL but also customize and recreate a new smart link of the same. Which means you can share a customized
+                            and shorten link and it will redirect you to the native app where the URL belongs.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="label">How much does it cost?</div>
+                        <div class="content">It's 100% FREE. You can avail this service for lifetime, from anywhere at anytime!</div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="label">What kind of links can i generate from Views Grow?</div>
+                        <div class="content">You can generate any kind of link from Openin App which you want to open in the native app.</div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="label">What is estimated revenue that I see on the dashboard?</div>
+                        <div class="content">Estimated revenue is an estimate of additional earnings from ads.<br><br> When you create a new smart link from Openin App and share it with others. Users are being redirected to the native app through openinapp link where they
+                            can see the ads which they originally can't when the link opens in-browser app.</div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="label">What are the statitistics or insights that I can see for a link?</div>
+                        <div class="content">OpeninApp provides the following insights for every smart link you generate through it:
+                            <ul>
+                                <li> Total clicks on the link - How many users have clicked on the link</li>
+                                <li>Per Day Click on the link (shown through a graph)</li>
+                                <li>Estimated revenue from the link - The additional revenue users earned through ads after users are redirected to the native app</li>
+                                <li> Top sources - Top sources from where the clicks are coming from. For eg. Facebook, Instagram, Twitter etc. </li>
+                                <li> Top devices - Top devices from which the clicks are coming from. For eg. Mobile, Desktop, Tablet </li>
+                                <li> Top locations - Locations from where the clicks came from</li>
+                                <li>Age distribution - Age distribution of the audience who clicked on the link</li>
+                                <li>Gender distribution - Gender distribution of the audience who clicked on the link To get more insights and analytics on other metrics, feel free to contact us and we'll get it done for you.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+
+                </div>
+            </div>
+
+            <div class="community">
+                <p>Join our community &amp; stay updated</p>
+                <div class="community-social">
+                    <a href="http://www.facebook.com" target="_blank"><img class="image" src="./img/fb.svg" alt="" srcset=""></a>
+                    <a href="http://www.twitter.com" target="_blank"><img style="background: #12a4d9; border: solid 1px white;" class="image" src="./img/twitter.svg" alt="" srcset=""></a>
+                    <a href="http://www.instagram.com" target="_blank"><img class="image" src="./img/instagram.png" alt="" srcset=""></a>
+
+                </div>
+                <div class="Email">
+                    <p>For queries mail us at</p>
+                    <a href="mailto:chat.viewsgrow@gmail.com">chat.viewsgrow@gmail.com</a>
+                </div>
+
+                <div class="app-av">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/google-play.svg" alt="" srcset=""></a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p style="font-weight: 400;">Copyright © 2023 App Operner App All rights reserved.</p>
+                <div class="footer-link-div">
+                    <div>
+                        <a href="./Terms-of-Service.html">
+                            Terms of Services 
+                        </a>
+                    </div>
+                    <div>
+                        |
+                    </div>
+                    <div>
+                        <a href="./Privacy-Policy.html">
+                            Privacy Policy
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+    <script>
+        var appName = "App Opener";
+        const accordion = document.getElementsByClassName('container');
 
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function() {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
 </body>
 
 </html>
