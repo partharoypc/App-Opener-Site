@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Yt Pro || FAQ's</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
         body {
-            background-color: #0A2344;
-            font-family: 'rubik', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         
         h1 {
@@ -29,23 +28,24 @@
         
         .accordion .container {
             position: relative;
-            margin: 10px 10px;
+            margin: 0;
         }
         
         .accordion .label {
             position: relative;
-            padding: 10px 0;
-            font-size: 16px;
+            padding: 12px 20px 10px 0px;
+            font-size: 14px;
             color: black;
             cursor: pointer;
         }
         
         .accordion .label::before {
-            content: '⌄';
+            margin-left: 20px;
+            content: '∨';
             position: absolute;
-            top: 20%;
+            top: 40%;
             right: -5px;
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 400;
             transform: translateY(-50%);
         }
@@ -54,7 +54,7 @@
             position: relative;
             background: white;
             height: 0;
-            font-size: 16px;
+            font-size: 14px;
             text-align: justify;
             overflow: hidden;
             transition: 0.5s;
@@ -70,9 +70,47 @@
             height: auto;
         }
         
+        .accordion .container.close .content {
+            height: 0;
+        }
+        
         .accordion .container.active .label::before {
-            content: '-';
+            content: '∧';
             font-size: 18x;
+        }
+        
+        .main-heading {
+            padding: 20px 0px;
+            margin: 10px auto;
+            color: white;
+            background: #12a4d9;
+        }
+        
+        .main-heading h2 {
+            font-weight: 500;
+            padding: 0 auto;
+            margin: 0 auto;
+        }
+        
+        .wp-btn {
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .wp-button {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            column-gap: 8px;
+            padding: 10px 20px;
+            margin: 0 20px;
+            border: solid 2px gainsboro;
+            border-radius: 20px;
+        }
+        
+        ul li {
+            margin: 0 auto;
+            padding: 0 auto;
         }
     </style>
 </head>
@@ -98,38 +136,24 @@
             </div>
 
         </div>
-
-        <style>
-            .main-heading {
-                padding: 20px 0px;
-                margin: 10px auto;
-                color: white;
-                background: #12a4d9;
-            }
-            
-            .main-heading h1 {
-                padding: 0 auto;
-                margin: 0 auto;
-            }
-        </style>
         <div class="main-body-b">
             <section class="main-heading">
-                <h1>Frequently Asked Questions</h1>
+                <h2>Frequently Asked Questions</h2>
             </section>
 
             <div class="accordion-body">
                 <div class="accordion">
                     <div class="container">
-                        <div class="label">What is Views Grow?</div>
-                        <div class="content">Views Grow is a smart link generation service platform. We're just like bitly but with a smart twist.<br><br> Views Grow helps you by providing you your own smart link which lets you open a link directly in the app instead of opening
-                            links in the built-in browser.<br><br> For eg. If you are a YouTuber, whenver you share link of your YouTube channel in the Instagram's link-in-bio, it opens the link in the browser inside the Instagram app. But if you generate
-                            an Views Grow smark link of your YouTube channel and put that in your link-in-bio, it will redirect user to directly to the YouTube app which in turns gives you more engagement and great user experience.</div>
+                        <div class="label">What is Yt Pro?</div>
+                        <div class="content">Yt Pro is a smart link generation service platform. We're just like bitly but with a smart twist.<br><br> Yt Pro helps you by providing you your own smart link which lets you open a link directly in the app instead of opening links
+                            in the built-in browser.<br><br> For eg. If you are a YouTuber, whenver you share link of your YouTube channel in the Instagram's link-in-bio, it opens the link in the browser inside the Instagram app. But if you generate an
+                            Yt Pro smark link of your YouTube channel and put that in your link-in-bio, it will redirect user to directly to the YouTube app which in turns gives you more engagement and great user experience.</div>
                     </div>
                     <hr>
                     <div class="container">
                         <div class="label">How is it different from bitly?</div>
-                        <div class="content">Bitly is a URL shortner. You can just decrease the length of your links from Bitly. Whereas Views Grow not only shorten your URL but also customize and recreate a new smart link of the same. Which means you can share a customized
-                            and shorten link and it will redirect you to the native app where the URL belongs.
+                        <div class="content">Bitly is a URL shortner. You can just decrease the length of your links from Bitly. Whereas Yt Pro not only shorten your URL but also customize and recreate a new smart link of the same. Which means you can share a customized and
+                            shorten link and it will redirect you to the native app where the URL belongs.
                         </div>
                     </div>
                     <hr>
@@ -139,19 +163,19 @@
                     </div>
                     <hr>
                     <div class="container">
-                        <div class="label">What kind of links can i generate from Views Grow?</div>
+                        <div class="label">What kind of links can i generate from Yt Pro?</div>
                         <div class="content">You can generate any kind of link from Openin App which you want to open in the native app.</div>
                     </div>
                     <hr>
                     <div class="container">
                         <div class="label">What is estimated revenue that I see on the dashboard?</div>
-                        <div class="content">Estimated revenue is an estimate of additional earnings from ads.<br><br> When you create a new smart link from Openin App and share it with others. Users are being redirected to the native app through openinapp link where they
-                            can see the ads which they originally can't when the link opens in-browser app.</div>
+                        <div class="content">Estimated revenue is an estimate of additional earnings from ads.<br><br> When you create a new smart link from Openin App and share it with others. Users are being redirected to the native app through Yt Pro link where they can
+                            see the ads which they originally can't when the link opens in-browser app.</div>
                     </div>
                     <hr>
                     <div class="container">
                         <div class="label">What are the statitistics or insights that I can see for a link?</div>
-                        <div class="content">OpeninApp provides the following insights for every smart link you generate through it:
+                        <div class="content">Yt Pro provides the following insights for every smart link you generate through it:
                             <ul>
                                 <li> Total clicks on the link - How many users have clicked on the link</li>
                                 <li>Per Day Click on the link (shown through a graph)</li>
@@ -165,8 +189,63 @@
                         </div>
                     </div>
                     <hr>
+                    <div class="container">
+                        <div class="label">Can I customize my link?</div>
+                        <div class="content">Yes, you can customize your link as per your liking. If you want to customize it according to your brand, you can surely do so.</div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="label">Where can I share the deep link generated from Yt Pro?</div>
+                        <div class="content">You can share the deep link anywhere you like. Put it on your Instagram bio or link-in-bio, share on Twitter, send on WhasApp or copy and share it anywhere you like.</div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="label">My deeplink is not working. What might be the issue?</div>
+                        <div class="content">If your deeplink is not working, there might be the follwing issues:
+                            <ul>
+                                <li> Your internet connection might not be working or the network is unstable. Try disconnecting your wifi/hotspot and connect again.</li>
+                                <li>The original link you have added to generate the deep link is not valid. Please make sure it is a valid link.</li>
+                                <li>Estimated revenue from the link - The additional revenue users earned through ads after users are redirected to the native app</li>
+                                <li>You might have generated an empty deep link. Please make sure you put a valid link before generating the deep link.</li>
 
+                            </ul>
+                            If the problem still persists, feel free to reach out to us and we'll respond back right away.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="label">I can't generate the deeplink from my link? What might be the issue?</div>
+                        <div class="content">Yt Pro provides the following insights for every smart link you generate through it:
+                            <ul>
+                                <li> Your internet connection might not be working or the network is unstable. Try disconnecting your wifi/hotspot and connect again.</li>
+                                <li>The original link you have added to generate the deep link is not valid. Please make sure it is a valid link.</li>
+                                <li>Estimated revenue from the link - The additional revenue users earned through ads after users are redirected to the native app</li>
+                                <li>You might have generated an empty deep link. Please make sure you put a valid link before generating the deep link.</li>
+
+                            </ul>
+                            If the problem still persists, feel free to reach out to us and we'll respond back right away.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container">
+                        <div class="label">What all apps does Yt Pro support?</div>
+                        <div class="content">Twitter, Facebook, Instagram, Spotify, Hungama, Jio Saavn, Josh, Moj, Apple Music, Snapchat, Telegram, Discord are few of the many major apps we support. Feel free to reach out us if your link is not opening to the native app it
+                            supossed to open in and we'll add that platform in our supported platforms list.</div>
+                    </div>
+                    <hr>
                 </div>
+            </div>
+
+            <div class="wp-btn">
+                <p>Have more question?</p>
+                <a href="https://api.whatsapp.com/send/?phone=+919062686255&text=Hello&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                    <div class="wp-button">
+                        <img width="26px" src="./img/whats-app-icons.gif" alt="" srcset="">
+                        <span style="color: black;"> Speak to us</span>
+
+                    </div>
+                </a>
+
             </div>
 
             <div class="community">
@@ -179,7 +258,7 @@
                 </div>
                 <div class="Email">
                     <p>For queries mail us at</p>
-                    <a href="mailto:chat.viewsgrow@gmail.com">chat.viewsgrow@gmail.com</a>
+                    <a href="mailto:viewsgrowapp@gmail.com">viewsgrowapp@gmail.com</a>
                 </div>
 
                 <div class="app-av">
@@ -209,14 +288,29 @@
         </div>
     </div>
     <script>
-        var appName = "App Opener";
         const accordion = document.getElementsByClassName('container');
 
         for (i = 0; i < accordion.length; i++) {
             accordion[i].addEventListener('click', function() {
-                this.classList.toggle('active')
+                this.classList.toggle('active');
             })
         }
+
+        const accordionTitles = document.querySelectorAll(".label");
+
+        accordionTitles.forEach((accordionTitle) => {
+            accordionTitle.addEventListener("click", () => {
+                if (accordionTitle.classList.contains("active")) {
+                    accordionTitle.classList.remove("active");
+                } else {
+                    const accordionTitlesWithIsOpen = document.querySelectorAll(".active");
+                    accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {
+                        accordionTitleWithIsOpen.classList.remove("active");
+                    });
+                    accordionTitle.classList.add("active");
+                }
+            });
+        });
     </script>
 </body>
 
