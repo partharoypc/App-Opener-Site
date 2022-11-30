@@ -472,6 +472,11 @@
         justify-content: center;
         justify-items: center;
     }
+    .footer-link-div a{
+        color: #12a4d9;
+    }
+
+
     /* Whats  App  Button  */
     
     .floating-button {

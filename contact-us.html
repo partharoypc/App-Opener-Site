@@ -21,8 +21,8 @@
             margin: 0 auto;
         }
         .wp-btn {
-            margin-top: 60px;
-            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-bottom: 40px;
         }
         
         .wp-button {
@@ -42,87 +42,56 @@
             font-size: 14px;
             text-align: justify;
         }
-
-        /* Forrm   Design  */
-        input[type=text], select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
+        .info{
+            padding: 20px 40px;
+        }
+        .address-data p{
+            margin: 0 auto;
         }
 
-        input[type=submit] {
-            background-color: #12a4d9;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        .name{
+            font-size: larger; 
+            font-weight: 500; 
+            color: rgb(88, 87, 87);
+            border: solid 1px rgb(88, 87, 87);
+            border-radius: 10px;
+
         }
 
-        input[type=submit]:hover {
-            background-color: #12a4d9;
+        @media only screen and (max-width: 300px) {
+            .info{
+                padding: 10px;
+            }
+        
         }
 
-        .container {
-            text-align: start;
-            border-radius: 5px;
-            background-color: white;
-            padding: 10px;
-        }
+    
 
-
+       
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="logo">
-                <a href="./">Views  <span style="color: black;">Grow</span></a>
-            </div>
-            <div class="inner-div">
-                <div>
-                    <a href="./Terms-of-Service.html">
-                        FAQs
-                    </a>
-                </div>
-                <div class="login-btn">
-                    <a style=" color: white;" href="./">
-                        login
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
         <div class="main-body-b">
             <section class="main-heading">
                 <h2>Contact Us</h2>
             </section>
-            
-            <div class="container">
-                <form action="/action_page.php">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              
-                  <label for="country">Phone Number</label>
-                   <input type="text" id="number" name="number" placeholder="Your Phone Number..">
-                 
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              
-                  <input  type="submit" value="Submit">
-                </form>
-            </div>
 
+            <div class="info">
+                <h1 class="name">Our Address</h1>
+                
+                <div class="address-data">
+                    <p> <strong>Sikder International IT Hub Private Limited</strong> </p>
+                    <p> Babanpur, Benegal Enamel, West Bengal 743122</p>
+                    <p style="margin-top: 10px;">
+                        <a style="font-size: 16px;" href="https://sikderithub.com/">Our Website</a>
+                    </p>
+                    
+
+                </div>
+                
+            </div>
+            
             <div class="contact-number">
                 <p style="text-align: center; font-size: 16px;">
                     Our Email: <a href="mailto:chat.viewsgrow@gmail.com">chat.viewsgrow@gmail.com</a>
