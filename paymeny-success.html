@@ -9,10 +9,22 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        .success{
+            margin-top: 20px;
+        }
+
+        .checkmark{
+            border-radius:70%; 
+            height:100px; 
+            width:100px; 
+            background: #F8FAF5; 
+            margin:0 auto;
+            padding: 30px;
+        }
         i {
             color: #9ABC66;
             font-size: 100px;
-            line-height: 100px;
+            line-height: 200px;
             margin: 0 auto;
         }
 
@@ -142,60 +154,8 @@
                     font-weight: 500;
                 }
             </style>
-
-
-
-
         </div>
-        <a href="https://wa.me/9062686255?text=Hello" target="_blank" rel="noopener noreferrer" style="position: relative;">
-            <div class="floating-button">
-                <img class="ft-whatsapp" src="./img/whatsapp-button.gif" alt="" srcset="">
-            </div>
-        </a>
     </div>
-
-
-
-    <script>
-        var counteToday = document.querySelector(".counter-today-value");
-        var Totalcounte = document.querySelector(".counter-total-value");
-
-        var today = new Date();
-        var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
-
-        var visitCount = localStorage.getItem("page_view");
-
-        // Check if page_view entry is present
-        if (visitCount && today) {
-            visitCount = Number(visitCount) + 1;
-            localStorage.setItem("page_view", visitCount);
-        } else {
-            visitCount = 1;
-            localStorage.setItem("page_view", 1);
-        }
-        counteToday.innerHTML = visitCount;
-        Totalcounte.innerHTML = visitCount;
-    </script>
-
-    <script type="text/javascript">
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("card");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2000);
-        }
-    </script>
-
 
 </body>
 
