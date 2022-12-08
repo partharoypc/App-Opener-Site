@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Views Grow || Youtube Marketing</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        i {
+            color: #9ABC66;
+            font-size: 100px;
+            line-height: 100px;
+            margin: 0 auto;
+        }
+
+        h1{
+            color: #88B04B;
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            margin: 0 auto;
+        }
+        p {
+          color: #404F5E;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-size:20px;
+          padding-top: 10px;
+          padding-bottom: 50px;
+          margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="./">Views <span style="color: black;">Grow</span></a>
+            </div>
+            <div class="inner-div">
+                <div>
+                    <a href="./Terms-of-Service.html">
+                        FAQs
+                    </a>
+                </div>
+                <div class="login-btn">
+                    <a style=" color: white;" href="./">
+                        login
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="main-body">
+            <div class="success">
+                <i class="checkmark">✓</i>
+                <h1>Payment</h1> 
+                <h1>Success</h1> 
+                <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+            </div>
+            
+
+            <div class="community">
+                <p>Join our community &amp; stay updated</p>
+                <div class="community-social">
+                    <a href="http://www.facebook.com" target="_blank"><img class="image" src="./img/fb.svg" alt="" srcset=""></a>
+                    <a href="http://www.twitter.com" target="_blank"><img style="background: #12a4d9; border: solid 1px white;" class="image" src="./img/twitter.svg" alt="" srcset=""></a>
+                    <a href="http://www.instagram.com" target="_blank"><img class="image" src="./img/instagram.png" alt="" srcset=""></a>
+
+                </div>
+                <div class="Email">
+                    <p>For queries mail us at</p>
+                    <a href="mailto:viewsgrowapp@gmail.com">viewsgrowapp@gmail.com</a>
+                </div>
+
+                <div class="app-av">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/google-play.svg" alt="" srcset=""></a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p style="font-weight: 400;">Copyright © 2023  Views Grow App All rights reserved.</p>
+                <div class="footer-link-div">
+                    <div>
+                        <a href="./Terms-of-Service.html">
+                            Terms of Services 
+                        </a>
+                    </div>
+                    <div>
+                        |
+                    </div>
+                    <div>
+                        <a href="./Privacy-Policy.html">
+                            Privacy Policy
+                        </a>
+                    </div>
+
+                </div>
+                <div class="footer-link-div">
+                    <div>
+                        <a href="./return-policy.html">
+                            Return Policy
+                        </a>
+                    </div>
+                    <div>
+                        |
+                    </div>
+                    <div>
+                        <a href="./contact-us.html">
+                            Contact Us
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <style>
+                .counter-div {
+                    border: solid 1px #12a4d9;
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    row-gap: 6px;
+                    flex-direction: row;
+                    font-size: x-small;
+                }
+                
+                .Counter-inner-div {
+                    display: block;
+                    align-self: center;
+                    padding: 3px 5px;
+                }
+                
+                .ctitle {
+                    font-weight: 500;
+                }
+            </style>
+
+
+
+
+        </div>
+        <a href="https://wa.me/9062686255?text=Hello" target="_blank" rel="noopener noreferrer" style="position: relative;">
+            <div class="floating-button">
+                <img class="ft-whatsapp" src="./img/whatsapp-button.gif" alt="" srcset="">
+            </div>
+        </a>
+    </div>
+
+
+
+    <script>
+        var counteToday = document.querySelector(".counter-today-value");
+        var Totalcounte = document.querySelector(".counter-total-value");
+
+        var today = new Date();
+        var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+
+        var visitCount = localStorage.getItem("page_view");
+
+        // Check if page_view entry is present
+        if (visitCount && today) {
+            visitCount = Number(visitCount) + 1;
+            localStorage.setItem("page_view", visitCount);
+        } else {
+            visitCount = 1;
+            localStorage.setItem("page_view", 1);
+        }
+        counteToday.innerHTML = visitCount;
+        Totalcounte.innerHTML = visitCount;
+    </script>
+
+    <script type="text/javascript">
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("card");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
+
+
+</body>
+
+</html>
