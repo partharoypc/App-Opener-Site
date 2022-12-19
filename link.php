@@ -1,43 +1,47 @@
 <?php
 require_once("app/init/init.php");
 
-$subdomain = isset($_REQUEST['subdomain']) ? $_REQUEST['subdomain'] : "";
-$prefix = isset($_REQUEST['prefix']) ? $_REQUEST['prefix'] : "";
-$link = false;
-if (empty($subdomain) && empty($prefix)) {
-    //only domain
-    //echo "Only domain";
+try {
+    $subdomain = isset($_REQUEST['subdomain']) ? $_REQUEST['subdomain'] : "";
+    $prefix = isset($_REQUEST['prefix']) ? $_REQUEST['prefix'] : "";
+    $link = false;
+    if (empty($subdomain) && empty($prefix)) {
+        //only domain
+        //echo "Only domain";
 
 
-} else if (!empty($subdomain) && empty($prefix)) {
-    //only subdomain
-    //echo "Only subdomain";
+    } else if (!empty($subdomain) && empty($prefix)) {
+        //only subdomain
+        //echo "Only subdomain";
 
 
-} else if (empty($subdomain) && !empty($prefix)) {
-    //only prefix
-    //echo "Only prefix";
-    $stmt = $dbo->prepare("SELECT * FROM link WHERE ref='$prefix' LIMIT 1");
-} else if (!empty($subdomain) && !empty($prefix)) {
-    //subdomain and prefix
-    $stmt = $dbo->prepare("SELECT * FROM link WHERE subdomain='$subdomain' AND ref='$prefix' LIMIT 1");
-}
+    } else if (empty($subdomain) && !empty($prefix)) {
+        //only prefix
+        //echo "Only prefix";
+        $stmt = $dbo->prepare("SELECT * FROM link WHERE ref='$prefix' LIMIT 1");
+    } else if (!empty($subdomain) && !empty($prefix)) {
+        //subdomain and prefix
+        $stmt = $dbo->prepare("SELECT * FROM link WHERE subdomain='$subdomain' AND ref='$prefix' LIMIT 1");
+    }
 
 
-if ($stmt->execute()) {
-    if ($stmt->rowCount() > 0) {
-        //link found
-        $link = (object) $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($stmt->execute()) {
+        if ($stmt->rowCount() > 0) {
+            //link found
+            $link = (object) $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if(!empty($link->id)){
+            if(!empty($link->id)){
 
-            $stmt = $dbo->prepare("INSERT INTO views (linkId, userId) VALUE ('$link->id', $link->userId) ");
-            try {
-                $stmt->execute();
-            }catch (Exception $e){
+                $stmt = $dbo->prepare("INSERT INTO views (linkId, userId) VALUE ('$link->id', $link->userId) ");
+                try {
+                    $stmt->execute();
+                }catch (Exception $e){
+                }
             }
         }
     }
+}catch (Exception $e){
+    echo $e->getMessage();
 }
 
 ?>
@@ -104,7 +108,7 @@ if ($stmt->execute()) {
 
 <body>
 <div class="container">
-    <div class="header">
+    <!-- <div class="header">
         <div class="logo">
             <a href="./">Views  <span style="color: black;">Grow</span></a>
         </div>
@@ -122,36 +126,39 @@ if ($stmt->execute()) {
 
         </div>
 
-    </div>
+    </div> -->
     <div class="main-body">
-        <div class="heading">
-            <p>Open Links Directly <br> In&nbsp;Apps</p>
-        </div>
-        <input class="theme-input" type="text" value="" placeholder=" Type or Paste Your Link" />
-        <span class="subtitle">It’s <span style="color: #12a4d9;">100% free </span>for individuals</span>
-
-        <div class="btn-link">
-            <a class="generate-btn" href="http://">Generate Link</a>
-        </div>
-
-        <style>
-            .slider-container {
-                margin-top: 80px;
-                margin-bottom: 80px;
-            }
-        </style>
-
-        <div class="slider-container">
-
-        </div>
-
-
-        <div class="poster-section">
-            <h2 style="font-weight: 500;">What's <span style="color: #12a4d9;"> Views </span>Grow ?</h2>
-            <div class="y-poster">
-                <video controls src="https://openinapp-prod.s3.ap-south-1.amazonaws.com/Intro_OpeninApp.mp4"></video>
+    <div class="heading">
+                <p>Open Links Directly <br> <span style="display: flex; justify-content: center;">In&nbsp;<img style="padding-left: 10px; padding-right: 10px;"  width="20%" src="./img/youtube-logo.png"> Apps</span> <span style="color: #12a4d9; font-size: 14px;" >By Views Grow App</span></p>
             </div>
-        </div>
+            <a href="https://play.google.com/store/apps/details?id=com.sikderithub.viewsgrow">
+                <div class="">
+                    <img width="100%" src="./img/install-app.JPEG" alt="" srcset="">
+                    
+                </div>
+            </a>
+
+            <style>
+                .slider-container {
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                }
+            </style>
+
+            <div class="slider-container">
+
+            </div>
+
+
+            <div class="poster-section">
+                <h2 style="font-weight: 500; font-size: 20px;">What's <span style="color: #12a4d9;"> Views </span>Grow ?</h2>
+                    <div>
+                        <a href="https://youtu.be/uuVxx53E8Kk">
+                            <img width="100%" src="./img/youtube-poster.JPEG" alt="" srcset="">
+                            
+                        </a>                        
+                    </div>
+            </div>
 
         <div class="another-slider">
             <div>
@@ -447,13 +454,15 @@ if ($stmt->execute()) {
         </div>
 
         <div style="background: #f9fbff; width: 100%;">
-            <div class="heading">
-                <p>Open Links Directly <br> In&nbsp;Apps</p>
+        <div class="heading">
+                <p>Open Links Directly <br> <span style="display: flex; justify-content: center;">In&nbsp;<img style="padding-left: 10px; padding-right: 10px;"  width="20%" src="./img/youtube-logo.png"> Apps</span> <span style="color: #12a4d9; font-size: 14px;" >By Views Grow App</span></p>
             </div>
-            <input class="theme-input" type="text" value="" placeholder=" Type or Paste Your Link" />
-            <div class="btn-link">
-                <a class="generate-btn" href="http://">Get Generate</a>
-            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.sikderithub.viewsgrow">
+                <div class="">
+                    <img width="100%" src="./img/install-app.JPEG" alt="" srcset="">
+                    
+                </div>
+            </a>
         </div>
 
 
