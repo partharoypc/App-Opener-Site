@@ -160,70 +160,71 @@ try {
                     </div>
             </div>
 
-        <div class="another-slider">
-            <div>
-                <div class="slider-wrapper">
-                    <!-- Slid 01 -->
-                    <div class="card ">
-                        <img src="./img/slider01.png" alt="">
-                        <div class="title">
-                            <h2>Ads Revinew</h2>
-                            <p>Users will be able to see the ads on your content.<br></p>
-                            <div class="btn">
-                                <img src="./img/a01.png" alt="" srcset="">
-                                <img src="./img/a02.png" alt="" srcset="">
+            <!-- <div class="another-slider">
+                <div>
+                    <div class="slider-wrapper">
+                        
+                        <div class="card ">
+                            <img src="./img/slider01.png" alt="">
+                            <div class="title">
+                                <h2>Ads Revinew</h2>
+                                <p>Users will be able to see the ads on your content.<br></p>
+                                <div class="btn">
+                                    <img src="./img/a01.png" alt="" srcset="">
+                                    <img src="./img/a02.png" alt="" srcset="">
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="card ">
+                            <img src="./img/slider02.png" alt="">
+                            <div class="title">
+                                <h2>Get Interactions</h2>
+                                <p>Users will be able to like, share and subscribe to you.</p>
+
+
+                                <div class="btn">
+                                    <img src="./img/b01.png" alt="" srcset="">
+                                    <img src="./img/b02.png" alt="" srcset="">
+                                    <img src="./img/b03.png" alt="" srcset="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                       
+                        <div class="card ">
+                            <img src="./img/slider03.png" alt="">
+                            <div class="title">
+                                <h2>Get Insights</h2>
+                                <p>Get In-Depth Insights and Analytics on your Fans….</p>
+                                <div class="btn">
+                                    <img src="./img/c01.png" alt="" srcset="">
+                                    <img src="./img/c02.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card ">
+                            <img src="./img/slider04.png" alt="">
+                            <div class="title">
+                                <h2>Open in App</h2>
+                                <p>The link will directly open<br><br></p>
+
+                                <div class="btn">
+                                    <img src="./img/d01.png" alt="" srcset="">
+                                    <img src="./img/d02.png" alt="" srcset="">
+                                    <img src="./img/d03.png" alt="" srcset="">
+                                </div>
                             </div>
                         </div>
 
                     </div>
-                    <!-- Slid  02-->
-                    <div class="card ">
-                        <img src="./img/slider02.png" alt="">
-                        <div class="title">
-                            <h2>Get Interactions</h2>
-                            <p>Users will be able to like, share and subscribe to you.</p>
-
-
-                            <div class="btn">
-                                <img src="./img/b01.png" alt="" srcset="">
-                                <img src="./img/b02.png" alt="" srcset="">
-                                <img src="./img/b03.png" alt="" srcset="">
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Slid 03 -->
-                    <div class="card ">
-                        <img src="./img/slider03.png" alt="">
-                        <div class="title">
-                            <h2>Get Insights</h2>
-                            <p>Get In-Depth Insights and Analytics on your Fans….</p>
-                            <div class="btn">
-                                <img src="./img/c01.png" alt="" srcset="">
-                                <img src="./img/c02.png" alt="" srcset="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slid 04 -->
-                    <div class="card ">
-                        <img src="./img/slider04.png" alt="">
-                        <div class="title">
-                            <h2>Open in App</h2>
-                            <p>The link will directly open<br><br></p>
-
-                            <div class="btn">
-                                <img src="./img/d01.png" alt="" srcset="">
-                                <img src="./img/d02.png" alt="" srcset="">
-                                <img src="./img/d03.png" alt="" srcset="">
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-        </div>
+            </div> -->
+
 
         <div class="happy-slider-section">
             <p>Over <strong>1,00,000</strong> Happy Customers!</p>
@@ -576,7 +577,7 @@ try {
 
 
     </div>
-    <a href="https://wa.me/9062686255?text=Hello" target="_blank" rel="noopener noreferrer" style="position: relative;">
+    <a href="https://wa.me/+919433614287?text=Hello" target="_blank" rel="noopener noreferrer" style="position: relative;">
         <div class="floating-button">
             <img class="ft-whatsapp" src="./img/whatsapp-button.gif" alt="" srcset="">
         </div>
