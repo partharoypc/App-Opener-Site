@@ -494,3 +494,135 @@
         border-radius: 50%;
         right: 0;
     }
+
+
+    /* App  Feature  Added  Section  */
+
+    .poster-section-link{
+        margin-top: 40px;
+        border-radius: 20px 20px 0 0;
+        padding-bottom: 40px;
+        background: #E6E9FA;
+    }
+
+    .link-hedline{
+        font-weight: 600; 
+        color: white; 
+        font-size: 20px; 
+        padding: 8px; 
+        background: #5883F3; 
+        border-radius: 20px 20px 0 0;
+
+    }
+
+    .link-hedline-2{
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 19px;
+        padding: 5px 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .all-link{
+        position: relative;
+        background: #E6E9FA;
+        padding: 10px;
+    }
+    .publish-btn{
+        background: #1958F5;
+        color: white;
+        font-size: larger;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    fieldset {
+        margin: 0 auto;
+        background: white;
+        text-align: left;
+        border: none;
+        border-radius: 20px;
+        
+    }
+    .link{
+        background: #EFF8FF;
+        margin-top: 5px;
+        padding: 10px 5px;
+        
+    }
+
+    .link2{
+        background: white;
+        margin-top: 5px;
+        padding: 10px 5px;
+    }
+    clicked-box{
+        background: #1958F5;
+    }
+
+    unclicked-box{
+        background-color: white;
+        border: solid 2px #1958F5;
+    }
+
+    :checked{
+        background-color: white;
+        border: solid 2px #1958F5;
+
+    }
+
+    label{
+        color: rgb(104, 102, 102);
+        font-size: medium;
+    }
+
+
+    .sublink-1{
+        color: #1958F5;
+        font-weight: 700;
+    }
+
+    .sublink-2{
+        color: #1958F5;
+        font-weight: 400;
+    }
+
+
+    @media only screen and (max-width: 360px) {
+        .link-hedline{
+            font-size: 14px;
+        }
+
+        .link-hedline-2{
+            font-size: 14px;
+            padding: 5px 5px;
+            margin-left: 10px;
+        }
+        .link{
+            padding: 7px 2px;
+        }
+        .link2{
+            padding: 7px 2px;
+        }
+    
+        label{
+            font-size: 12px;
+        }
+
+    }
+
+    @media only screen and (max-width: 300px) {
+    
+        label{
+            font-size: 10px;
+        }
+
+        .link-hedline-2{
+            font-size: 13px;
+        }
+
+    }
