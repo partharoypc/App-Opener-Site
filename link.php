@@ -129,7 +129,7 @@ try {
     </div> -->
     <div class="main-body">
     <div class="heading">
-                <p>Open Links Directly <br> <span style="display: flex; justify-content: center;">In&nbsp;<img style="padding-left: 10px; padding-right: 10px;"  width="20%" src="./img/youtube-logo.png"> Apps</span> <span style="color: #12a4d9; font-size: 14px;" >By Views Grow App</span></p>
+                <p>Open Links Directly <br> <span style="display: flex; justify-content: center;">In&nbsp;<img style="padding-left: 10px; padding-right: 10px;"  width="25%" src="./img/youtube-logo.png"> Apps</span> <span style="color: #12a4d9; font-size: 16px;" >By Views Grow App</span></p>
             </div>
             <a href="https://play.google.com/store/apps/details?id=com.sikderithub.viewsgrow">
                 <div class="">
@@ -523,7 +523,7 @@ try {
             </div>
 
             <div class="app-av">
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/google-play.svg" alt="" srcset=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.sikderithub.viewsgrow" target="_blank" rel="noopener noreferrer"><img src="./img/google-play.svg" alt="" srcset=""></a>
             </div>
         </div>
 
@@ -587,7 +587,7 @@ try {
             }
         </style>
 
-        <div>
+        <!-- <div>
             <div class="counter-div">
                 <div class="Counter-inner-div">
                     <div class="counter-today ctitle">Today</div>
@@ -615,11 +615,11 @@ try {
                     <div class="counter-total-value">3</div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
     </div>
-    <a href="https://wa.me/+919433614287?text=Hello" target="_blank" rel="noopener noreferrer" style="position: relative;">
+    <a href="https://wa.me/919433614287" target="_blank" rel="noopener noreferrer" style="position: relative;">
         <div class="floating-button">
             <img class="ft-whatsapp" src="./img/whatsapp-button.gif" alt="" srcset="">
         </div>
@@ -654,6 +654,26 @@ try {
 
     });
 </script>
+
+<script>
+        var counterContainer = document.querySelector(".website-counter");
+        var visitCount = localStorage.getItem("page_view");
+
+        //view count script start
+        var ajax = jQuery.ajax({
+                method : 'get',
+                url : 'site_view.php', // Link to this page
+                data : { 'increase' : '1' }
+            }) ;
+            ajax.done(function(data){
+                log.console(data)
+            }) ;
+
+            ajax.fail(function(data){
+                
+            }) ;
+        
+    </script>
 
 <script>
     var counteToday = document.querySelector(".counter-today-value");

@@ -3915,7 +3915,7 @@
                 </div>
 
                 <div class="app-av">
-                    <a href="./" target="_blank"><img src="./img/google-play.svg" alt="" srcset=""></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.sikderithub.viewsgrow" target="_blank"><img src="./img/google-play.svg" alt="" srcset=""></a>
                 </div>
             </div>
 
@@ -3968,6 +3968,26 @@
         setTimeout(hideLoader, 20 * 1000);
     
     </script>
+
+<script>
+    var counterContainer = document.querySelector(".website-counter");
+    var visitCount = localStorage.getItem("page_view");
+
+    //view count script start
+    var ajax = jQuery.ajax({
+            method : 'get',
+            url : 'site_view.php', // Link to this page
+            data : { 'increase' : '1' }
+        }) ;
+        ajax.done(function(data){
+            log.console(data)
+        }) ;
+
+        ajax.fail(function(data){
+            
+        }) ;
+    
+</script>
 
     
 </body>
